@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="public/imgs/icon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/stylesheets/style.css">
+    <title>Tetris</title>
+</head>
+
+<body>
+    <div class="container container1">
+        <!-- navbar -->
+        <div class="topnav">
+            <div class="float-left" style="width: 160px;">
+                <a id="startBtn" href="#">New Game</a>
+            </div>
+            <a id="easyBtn" href="#">Simple</a>
+            <a id="normalBtn" href="#">Advanced</a>
+            <div id="score"></div>
+        </div>
+
+        <div class="container container2">
+            <div>
+                <canvas id="tetrisCanvas" width="240" height="400"></canvas>
+            </div>
+            <div>
+                <canvas id="nextCanvas" width="80" height="80"></canvas>
+                <div class="side-menu">
+                    <p class="lead">Controls</p>
+                    <p><img src="public/imgs/left.png"><img src="public/imgs/right.png"> or <img src="public/imgs/a.png"><img
+                            src="public/imgs/d.png"> :
+                        Move</p>
+                    <p><img src="public/imgs/up.png"><img src="public/imgs/w.png"> : Rotate</p>
+                    <p><img src="public/imgs/down.png"><img src="public/imgs/s.png"> : Soft Drop</p>
+                    <p><img class="space" src="public/imgs/space.png"> : Hard Drop</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="text-right">
+            <a class="text-muted meta" href="/">Gahelrasoul Web</a>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="public/scripts/app.js"></script>
+</body>
+
+</html>
