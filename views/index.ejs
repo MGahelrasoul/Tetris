@@ -1,0 +1,30 @@
+<%- include("partials/header") %>
+<div class="container container1">
+    <!-- navbar -->
+    <div class="topnav">
+        <div class="float-left" style="width: 160px;">
+            <a id="startBtn" href="#">New Game</a>
+        </div>
+        <a id="easyBtn" href="#">Simple</a>
+        <a id="normalBtn" href="#">Advanced</a>
+        <div id="score"></div>
+    </div>
+
+    <div class="container container2">
+        <div>
+            <canvas id="tetrisCanvas" width="240" height="400"></canvas>
+        </div>
+        <div>
+            <canvas id="nextCanvas" width="80" height="80"></canvas>
+            <div class="side-menu">
+                <p class="lead">Controls</p>
+                <p><img src="imgs/left.png"><img src="imgs/right.png"> or <img src="imgs/a.png"><img src="imgs/d.png"> :
+                    Move</p>
+                <p><img src="imgs/up.png"><img src="imgs/w.png"> : Rotate</p>
+                <p><img src="imgs/down.png"><img src="imgs/s.png"> : Soft Drop</p>
+                <p><img class="space" src="imgs/space.png"> : Hard Drop</p>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include("partials/footer") %>
